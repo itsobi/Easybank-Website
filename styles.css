@@ -73,6 +73,9 @@ nav img {
 .hamburger {
   display: none;
 }
+.hamburger img {
+  width: 3rem;
+}
 
 nav {
   display: flex;
@@ -200,7 +203,7 @@ nav {
 /************** ARTICLE SECTION ***********/
 
 .article-section {
-  padding: 5rem 5rem;
+  padding: 5rem 0;
 }
 
 .article-text {

@@ -42,7 +42,7 @@
     /********* INTRO SECTION *******/
 
     .intro-section {
-        height: 80rem;
+        height: 70rem;
 
     }
 
@@ -83,9 +83,10 @@
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width:600px) {
+
     .intro-image img {
-        width: 400px;
-        text-align: center;
+        width: 300px;
+        margin: 0 auto;
     }
 
     .article-box {
