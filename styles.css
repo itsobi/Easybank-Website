@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+section {
+  padding: rem 0;
+}
+
+/* VARIABLES */
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* UTILITY CLASSES */
+.mb-small {
+  margin-bottom: 1.6rem;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-large {
+  margin-bottom: 5rem;
+}
+
+/* START */
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+header {
+  padding: 2.5rem 0;
+  position: relative;
+  height: 8rem;
+}
+
+nav img {
+  height: 2rem;
+}
+.checkbox {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--bright-cyan);
+  transition: all .3s;
+  position: relative;
+}
+.nav-links li a:hover {
+  color: var(--lime-green);
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, var(--bright-cyan), var(--lime-green));
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .3s;
+}
+
+.nav-links li a:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, var(--bright-cyan), var(--grayish-blue));
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  transition: all .3s;
+}
+
+.btn:hover {
+  opacity: .8;
+  padding: 1rem 2.3rem;
+}
+
+/************ INTRO SECTION ***********/
+/************ INTRO SECTION ***********/
+/************ INTRO SECTION ***********/
+.intro-section {
+  width: 100%;
+  background-color: var(--very-light-gray);
+  height: 55rem;
+}
+
+.intro {
+  display: flex;
+
+}
+.intro-text {
+  width: 60%;
+  align-self: center;
+}
+
+.intro-text h1 {
+  font-size: 3.5rem;
+  color: var(--lime-green);
+}
+
+.intro-image {
+  margin-top: 3rem;
+  text-align: center;
+  width: 40%;
+}
+.intro-image img {
+  width: 100%;
+}
+
+/********** WHY SECTION *************/
+/********** WHY SECTION *************/
+/********** WHY SECTION *************/
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.why-section {
+  background-color: var(--light-grayish-blue);
+  padding: 5rem 0;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+/************** ARTICLE SECTION ***********/
+/************** ARTICLE SECTION ***********/
+/************** ARTICLE SECTION ***********/
+
+.article-section {
+  padding-top: 5rem;
+}
+
+.article-text {
+  text-align: center;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0 2rem;
+}
+
+.article-box {
+  overflow: hidden;
+}
+
+.article-box img {
+  border-radius: 5px;
+  height: 23rem;
+}
+
+.author {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+}
+
+/******** FOOTER ******/
+/******** FOOTER ******/
+/******** FOOTER ******/
+footer {
+  background-color: var(--lime-green);
+  padding: 5rem 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all .3s;
+}
+.footer-links ul li a:hover {
+  color: var(--white);
+} 
+
+.footer-text p {
+  font-size: 1.6rem;
+}
+
+.btn-footer {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, var(--bright-cyan), var(--grayish-blue));
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+
+
+
+
+

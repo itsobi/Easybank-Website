@@ -1,0 +1,104 @@
+/* IPAD RESPONSIVE */
+@media screen and (max-width:769px) {
+    .btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 2.8rem;
+        right: 3rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid var(--lime-green);
+        background-color: var(--white);
+        border-radius: 3px;
+        transform: translateY(-50rem);
+        transition: all .3s;
+        z-index: 99;
+    }
+
+    .nav-links li {
+        padding: 1rem 0;
+    }
+
+    .nav-links li a:hover::before {
+        opacity: 0;
+    }
+
+    #toggle:checked ~ .nav-links {
+        transform: translateY(5rem);
+    }
+
+    /********* INTRO SECTION *******/
+    /********* INTRO SECTION *******/
+    /********* INTRO SECTION *******/
+
+    .intro-section {
+        height: 80rem;
+
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .intro-image {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .intro-image img {
+        width: 500px;
+    }
+
+    .intro-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .why-section {
+        text-align: center;
+    }
+
+    .btn-footer {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border: 1px solid transparent;
+        background: linear-gradient(to right, var(--bright-cyan), var(--grayish-blue));
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+    }
+
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width:600px) {
+    .intro-image img {
+        width: 400px;
+        text-align: center;
+    }
+
+    .article-box {
+        text-align: center;
+    }
+
+    .btn-footer {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border: 1px solid transparent;
+        background: linear-gradient(to right, var(--bright-cyan), var(--grayish-blue));
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+    }
+}
